@@ -141,7 +141,7 @@ def draw_all(
     # st.select_slider("Pick a number", [1, 2, 3], key=key)
     st.number_input("Exact numbers", key=key)
     st.text_input("A little writing space", key=key)
-    st.text_area("...and more if you need more it", key=key)
+    st.text_area("...and more if you need it", key=key)
     st.selectbox(
         "My favorite thing in the world is...", ["Streamlit", "Theming", "Baloooons 🎈 "], key=key
     )
