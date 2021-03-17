@@ -103,9 +103,12 @@ def draw_all(
         """
         # Hi there!
         
-        Look at all the cool colors I got now 👀 
+        Look at all the cool colors this app has now 👀 
+        
+        Some example widgets:
 
         ```python
+        # First some code.
         streamlit = "cool"
         theming = "fantastic"
         both = "💥"
