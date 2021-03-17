@@ -7,9 +7,9 @@ import numpy as np
 CURRENT_THEME = "light"
 IS_DARK_THEME = False
 EXPANDER_TEXT = """
-                This is Streamlit's default *Light* theme. It should be enabled by default 🎈
-                If not, you can enable it in the app menu (☰ -> Settings -> Theme).
-                """
+    This is Streamlit's default *Light* theme. It should be enabled by default 🎈
+    If not, you can enable it in the app menu (☰ -> Settings -> Theme).
+    """
 
 # """
 #     This is Streamlit's default *Dark* theme. You can enable it in the app menu
