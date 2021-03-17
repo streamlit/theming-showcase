@@ -103,10 +103,8 @@ def draw_all(
         """
         # Hi there!
         
-        Look at all the cool colors this app has now 👀 
-        
-        Some example widgets:
-
+        Here are some example widgets. Look at all the cool colors this app has now 👀 
+    
         ```python
         # First some code.
         streamlit = "cool"
