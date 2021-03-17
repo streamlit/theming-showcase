@@ -116,9 +116,13 @@ def draw_all(
         """
     )
 
-    st.checkbox("Do you like it?", key=key)
-    st.radio("How much?", ["1 balloon 🎈", "2 balloons 🎈🎈", "3 balloons 🎈🎈🎈"], key=key)
-    st.button("🤡 Click to show your love for theeemes", key=key)
+    st.checkbox("Is this cool or what?", key=key)
+    st.radio(
+        "How many balloons?",
+        ["1 balloon 🎈", "2 balloons 🎈🎈", "3 balloons 🎈🎈🎈"],
+        key=key,
+    )
+    st.button("🤡 Click me", key=key)
 
     if plot:
         st.write("Oh look, a plot:")
@@ -137,15 +141,15 @@ def draw_all(
         "From 10 to 11, how cool are themes?", min_value=10, max_value=11, key=key
     )
     # st.select_slider("Pick a number", [1, 2, 3], key=key)
-    st.number_input("For exact people", key=key)
-    st.text_input("Write your thoughts on theming down here...", key=key)
-    st.text_area("...and here if you need more space", key=key)
+    st.number_input("Exact numbers", key=key)
+    st.text_input("A little writing space", key=key)
+    st.text_area("...and more if you need more it", key=key)
     st.selectbox(
-        "Pick your favorite", ["Streamlit", "Theming", "Baloooons 🎈 "], key=key
+        "My favorite thing in the world is...", ["Streamlit", "Theming", "Baloooons 🎈 "], key=key
     )
     # st.multiselect("Pick a number", [1, 2, 3], key=key)
-    st.file_uploader("Upload your fav theme here", key=key)
-    st.color_picker("And pick your fav color here", key=key)
+    st.file_uploader("You can now upload with style", key=key)
+    st.color_picker("Colors, colors, colors..., key=key)
     with st.beta_expander("Expand me!"):
         st.write("Nothing to see here 👀 ")
     st.write("")
