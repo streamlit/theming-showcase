@@ -149,7 +149,7 @@ def draw_all(
     )
     # st.multiselect("Pick a number", [1, 2, 3], key=key)
     st.file_uploader("You can now upload with style", key=key)
-    st.color_picker("Colors, colors, colors..., key=key)
+    st.color_picker("Colors, colors, colors...", key=key)
     with st.beta_expander("Expand me!"):
         st.write("Nothing to see here 👀 ")
     st.write("")
