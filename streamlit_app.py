@@ -101,9 +101,9 @@ def draw_all(
 ):
     st.write(
         """
-        # Hi there!
+        # Example Widgets
         
-        Here are some example widgets. Look at all the cool colors this app has now 👀 
+        These widgets don't do anything. But look at all the new colors they got 👀 
     
         ```python
         # First some code.
@@ -122,39 +122,40 @@ def draw_all(
     )
     st.button("🤡 Click me", key=key)
 
-    if plot:
-        st.write("Oh look, a plot:")
-        x1 = np.random.randn(200) - 2
-        x2 = np.random.randn(200)
-        x3 = np.random.randn(200) + 2
+    # if plot:
+    #     st.write("Oh look, a plot:")
+    #     x1 = np.random.randn(200) - 2
+    #     x2 = np.random.randn(200)
+    #     x3 = np.random.randn(200) + 2
 
-        hist_data = [x1, x2, x3]
-        group_labels = ["Group 1", "Group 2", "Group 3"]
+    #     hist_data = [x1, x2, x3]
+    #     group_labels = ["Group 1", "Group 2", "Group 3"]
 
-        fig = ff.create_distplot(hist_data, group_labels, bin_size=[0.1, 0.25, 0.5])
+    #     fig = ff.create_distplot(hist_data, group_labels, bin_size=[0.1, 0.25, 0.5])
 
-        st.plotly_chart(fig, use_container_width=True)
+    #     st.plotly_chart(fig, use_container_width=True)
 
+    st.file_uploader("You can now upload with style", key=key)
     st.slider(
         "From 10 to 11, how cool are themes?", min_value=10, max_value=11, key=key
     )
     # st.select_slider("Pick a number", [1, 2, 3], key=key)
-    st.number_input("Exact numbers", key=key)
-    st.text_input("A little writing space", key=key)
-    st.text_area("...and more if you need it", key=key)
+    st.number_input("So many numbers", key=key)
+    st.text_area("A little writing space for you :)", key=key)
     st.selectbox(
-        "My favorite thing in the world is...", ["Streamlit", "Theming", "Baloooons 🎈 "], key=key
+        "My favorite thing in the world is...",
+        ["Streamlit", "Theming", "Baloooons 🎈 "],
+        key=key,
     )
     # st.multiselect("Pick a number", [1, 2, 3], key=key)
-    st.file_uploader("You can now upload with style", key=key)
-    st.color_picker("Colors, colors, colors...", key=key)
+    # st.color_picker("Colors, colors, colors", key=key)
     with st.beta_expander("Expand me!"):
-        st.write("Nothing to see here 👀 ")
+        st.write("Hey there! Nothing to see here 👀 ")
     st.write("")
-    st.write("That's our progress on theming:")
-    st.progress(0.99)
+    # st.write("That's our progress on theming:")
+    # st.progress(0.99)
     if plot:
-        st.write("Still reading this?")
+        st.write("And here's some data and plots")
         st.json({"data": [1, 2, 3, 4]})
         st.dataframe({"data": [1, 2, 3, 4]})
         st.table({"data": [1, 2, 3, 4]})
