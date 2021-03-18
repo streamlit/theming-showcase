@@ -92,7 +92,10 @@ for col, theme in zip(cols, THEMES):
 
 
 ""
-
+st.write(
+    '<span style="font-size: 0.8rem">Not loading? You probably changed themes before. Go to ☰ -> Settings -> Theme and select *Custom Theme*.</span>',
+    unsafe_allow_html=True,
+)
 with st.beta_expander("How can I use this theme in my app?"):
     st.write(EXPANDER_TEXT)
 
