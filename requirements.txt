@@ -1,4 +1,4 @@
-streamlit_nightly==0.78.1.dev20210316
+streamlit_nightly==0.78.1.dev20210317
 numpy==1.19.2
 plotly==4.14.3
 streamlit==0.78.0
