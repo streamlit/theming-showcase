@@ -1,5 +1,4 @@
 streamlit==0.79.0
 numpy==1.19.2
 plotly==4.14.3
-streamlit==0.78.0
 scipy==1.5.2
