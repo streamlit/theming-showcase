@@ -94,7 +94,7 @@ for col, theme in zip(cols, THEMES):
 ""
 with st.beta_expander("Not loading?"):
     st.write(
-        "You probably played around with themes before. Go to ☰ -> Settings -> Theme and select *Custom Theme*."
+        "You probably played around with themes before and overrode this app's theme. Go to ☰ -> Settings -> Theme and select *Custom Theme*."
     )
 with st.beta_expander("How can I use this theme in my app?"):
     st.write(EXPANDER_TEXT)
