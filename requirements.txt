@@ -2,3 +2,4 @@ streamlit==0.79.0
 numpy==1.19.2
 plotly==4.14.3
 scipy==1.5.2
+click==8.0.4
